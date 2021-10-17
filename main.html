@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+</head>
+<style>
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.nav{
+  font-family: sans-serif;
+  text-align: end;
+  font-weight: 500;
+  background: cornflowerblue;
+  padding: 2px;
+}
+.nav h2{
+  color: turquoise;
+  text-align: center;
+}
+.nav h3{
+  color: white;
+}
+#pro-add{
+  background: skyblue;
+  color: white;
+  padding: 2px;
+  border-radius: 50%;
+  text-align: center;
+  width: 4em;
+  height: 4em;
+  text-align: center;
+}
+.container span{
+  font-family: sans-serif;
+  font-weight: 200;
+  padding: 1px;
+  text-align: center;
+}
+</style>
+<body>
+    <div class="nav">
+        <h2>Product Catalogue</h2>
+        <h3>Sadashiva Store</h3>
+    </div>
+    <br>
+    <div class="container">
+      <span>Add Product</span>
+      <button id="pro-add">
+        +
+      </button>
+      <br>
+      <br>
+        <div class="card">
+            <img src="Koala.jpg" alt="koala" style="width:100%">
+            <h1>Product Name</h1>
+            <p class="price">$19.99</p>
+            <p class="price">1Kg</p>
+            <p>Sample text below project</p>
+            <button id="pro-edit" onclick="location.href = 'pro-add.html';">Edit / Change / Delete</button>
+        </div>
+    </div>
+
+
+    </div>
+    <div class="footr"></div>
+    
+<script type="text/javascript">
+  document.getElementById("pro-add").onclick = function () {
+      location.href = "pro-add.html";
+  };
+</script>
+<script type="text/javascript">
+  document.getElementById("pro-edit").onclick = function () {
+      location.href = "pro-add.html";
+  };
+</script>
+</body>
+</html>

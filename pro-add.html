@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add product</title>
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        background:  #c0ceca;
+    }
+    .container{
+        padding: 1px;
+        background: #c0ceca;
+    }
+    .container h2{
+        font-size: 21px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 900;
+        color: yellow;
+        padding: 1px;
+    }
+    .box{
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 1px;
+    }
+    .box h3{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .box input{
+        background: white;
+        max-width: 20rem;
+        height: 3rem;
+        text-align: center;
+        padding: 1px;
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        border: none;
+        border-radius: 20px;
+    }
+    
+</style>
+<body>
+    <div class="nav"></div>
+    <div class="container">
+        <h2>Add Products</h2>
+        <div class="box">
+            <h3>Product Photo</h3>
+            <input type="file" name="" id="pro-pic" style="height: 3em; width: 15em; padding: 1em; border-radius: none;">
+            <br>
+            <h3>Product Name</h3>
+            <input type="text" placeholder="Good day Biscute"name="" id="pro-name">
+            <br>
+            <h3>Product Price</h3>
+            <input type="text" placeholder="10 Rs"name="" id="pro-price">
+            <br>
+            <h3>Product Quantity</h3>
+            <input type="text" placeholder="30Gram"name="" id="pro-quantity">
+
+        </div>
+
+        <button id=uploadBtn onclick="pro-upload" style="height: 2em; width: 6em; color: yellow; background: turquoise; font-size: 18px; font-family: sans-serif; font-weight: 700; text-align: center;">Upload</button>
+    </div>
+    <div class="footr">
+        <hr>
+    </div>
+</body>
+</html>
