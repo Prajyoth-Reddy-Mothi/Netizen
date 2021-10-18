@@ -105,6 +105,8 @@ function login () {
 
     // DOne
     alert('User Logged In!!')
+    
+      window.location.href = "select-add.html";
 
   })
   .catch(function(error) {
